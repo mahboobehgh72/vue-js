@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fn">
+<head>
+    <title>vue3</title>
+    <script src="https://unpkg.com/vue@3.0.2/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<h1>Hello Books <samp>(OFF)</samp></h1>
+<div id="app">
+    <picture>
+      <img class="ax" src="./the-blind-owl-novel-714x1024.jpg" alt="bofecor">
+    </picture>
+     <div class="header">
+        <h4>قیمت:</h4>
+        <del>500,000 R</del>
+        <strong>490,000 R</strong><br><br>
+      </div>
+        <div id="bu-p">
+          <p>{{title}} - {{author}} </p>
+           <div id="button">
+              <button class="mount"  @click="mount++" >
+                 <nav id="material">
+                   <span class="material-symbols-outlined"> add</span>
+                  </nav>
+              </button>
+                  <h3 class="zero">{{mount}}</h3>
+              <button class="mount2"  @click="mount--">
+                  <nav id="symbols">
+                  <span class="material-symbols-outlined">delete</span>
+                  </nav>
+              </button> 
+          </div >
+    </div>
+    <script src="./all.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
